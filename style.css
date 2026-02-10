@@ -394,7 +394,8 @@ font-size: larger;
         .box {
             display: flex;
             flex-direction: column;
-margin-right: 100px;                       }
+            margin-right: 100px;                    
+    }
 
     .image {
         width: 400px;
@@ -422,8 +423,16 @@ margin-right: 100px;                       }
     }
     
     .social {
-        margin-top: 10px;
-        }
+        margin-top: 5px;
+
+    }
+    .tab_cont {
+        margin-top: 5px;
+    }
+ 
+    .ic {
+        width: 60px;
+    }
     .map {
         width: 300px;
         height:300px;
@@ -523,23 +532,45 @@ margin-right: 100px;                       }
         flex-direction: column;
         
     }
+
+    .telegram {
+        margin-left: 60px;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-left: 30px;
+    }
+
+    .tab_cont {
+        margin-top: 30px;
+    }
+
+.ic {
+    width: 50px;
+}
     
     .map {
         width: 300px;
         height:300px;
-        margin-left: 50px;
+        
     }
 
     .deal_text {
-        margin: 10px;
+        margin: 20px;
     }
     .menu_1 {
         max-width: 300px;
     }
 
-    .social {
-        margin-top: 10px;
-        }
+    .anketa {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
 
     .cta {
         width: 250px;
