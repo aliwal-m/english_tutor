@@ -1,0 +1,590 @@
+.mobile-container {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image {
+    border-radius: 10px;
+}
+
+.top {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #6594B1;
+    padding: 20px;
+    font-family: 'Maven Pro', sans-serif;
+    border: white solid 2px;
+}
+
+.hamburger {
+    display: none; /* Скрыта по умолчанию */
+}
+.menu {
+    color: white;
+    text-decoration: none; 
+    padding: 20px;
+    font-size: 30px;
+}
+.menu:hover {
+    color: #0B2D72;
+}
+.main {
+    margin-right: auto;
+    margin-left: 0px;
+    }
+
+    .menu_top{
+margin-top: 15px;
+
+    }
+
+
+    .program_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+    
+    .menu_1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        max-height: 500px;
+        padding: 5px;
+        border: solid;
+        border-color: #6594B1;
+        border-radius: 20px;
+        background-color: #EAEFEF;
+    }
+
+    .menu_1:hover {
+        background-color: #79b4c2;
+    }
+
+    .mid {
+        display: flex;
+        justify-content: space-around;
+        background-color: #6594B1;
+        border: white solid 2px;
+        margin-top: 40px;
+        
+    }
+
+
+
+    .group_opa {
+        opacity: 100%;
+    }
+
+    .img_course {
+        display: flex;
+        align-items: center;
+    }
+        
+    
+    .class_descr {
+        color: white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 20px;
+        }
+        
+    .cta {
+        font-family: 'Maven Pro', sans-serif;
+        border: white solid 2px;
+        padding: 10px;
+        background-color: #6594B1;
+        font-size: 20px;
+        width: 250px;
+        align-self: center;
+        color: black;
+        border-radius: 10px;
+    }
+
+     .cta:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer
+    }  
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEFEF;
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 10px;
+    font-size: 20px;
+    color: grey;
+    margin-left: 100px;
+    }
+
+
+.flip-box {
+    background-color: transparent;
+    width: 350px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    display: flex;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 150%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+  /* Position the front and back side */
+.flip-box-front, .flip-box-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border: #6594B1 solid 2px;
+    border-inline-end: #e3b5c0;
+    padding: 50px;
+    border-radius: 10px;
+ }
+.flip-box-back {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 130%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    padding: 100px;
+    background-image: url(pictures/1.png);
+    background-size: cover;
+}
+  /* Style the front side (fallback if image is missing) */
+
+  /* Style the back side */
+.flip-box-back {
+    color: #0B2D72;
+    transform: rotateY(180deg);
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 100px;
+    background-color: #EAEFEF;
+}
+
+
+.regalos {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    line-height: 30px;
+}
+
+
+.deal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+
+.deal_text {
+    max-width: 400px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 70px;
+    }
+    
+    .gallery-item {
+        width: 200px; /* Задайте желаемую ширину превью */
+        height: 200px; /* Задайте желаемую высоту превью */
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.9);
+    }
+    
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+    
+    .close-button {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    
+    .close-button:hover,
+    .close-button:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* contact info */
+    .anketa {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 70px;
+        }
+
+.telegram {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.tel {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: 'Maven Pro', sans-serif;
+    text-decoration: none;
+}
+
+.font {
+font-family: 'Maven Pro', sans-serif;
+font-size: larger;
+}
+
+.tab_cont {
+    margin-top: 100px;
+}
+
+.cta_agr {
+    font-family: 'Maven Pro', sans-serif;
+    padding: 10px;
+    background-color: #c55e7c;
+    width: 300px;
+    align-self: center;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+.cta_agr:hover {
+    background-color: #ebd1d7;
+    
+}
+
+.text_aggr {
+    text-decoration-line: underline;
+    color: aliceblue;
+}
+
+.text_aggr:hover {
+    color: black;
+}
+
+
+
+@media all and (max-width: 1100px) {
+
+    .mobile-container {
+        display: inline;
+    }
+
+    .top {
+        display: none;  
+    }
+
+    .image_1 {
+        display: none; 
+    }
+    
+    .flip-box-front, .flip-box-back {
+        display: none; 
+        }
+    .flip-box {
+        display: none; 
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        }
+    
+        .box {
+            display: flex;
+            flex-direction: column;
+margin-right: 100px;                       }
+
+    .image {
+        width: 400px;
+        height: 300px;
+        margin-left: 100px; 
+    }
+
+  
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    .regalos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .deal_text {
+        margin: 10px;
+    }
+    
+    .social {
+        margin-top: 10px;
+        }
+    .map {
+        width: 300px;
+        height:300px;
+        margin-right: 100px;
+    }
+
+
+    .menu_1 {
+        max-width: 300px;
+    }
+
+    .cta {
+        width: 250px;
+    }
+
+    .mobile-container {
+        
+        margin: auto;
+        color: white;
+        border-radius: 10px;
+      }
+          
+      .topnav {
+        overflow: hidden;
+        background-color: #79b4c2;
+        position: relative;
+      }
+      
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      .topnav a {
+        color: white;
+        padding: 16px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        line-height: 30px;
+      }
+      
+      .topnav a.icon {
+        background: #79b4c2;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .topnav a:hover {
+        background-color: #79b4c2;
+        color: white;
+      }
+      
+      .active {
+        background-color: #6594B1;
+        color: white;
+      }
+}
+
+
+@media all and (max-width: 500px) {
+    
+        .top {
+            display: none;  
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            
+                        }
+    
+    .flip-box {
+        width: 200px;
+        height: 250px;
+    }
+    .image {
+        width: 250px;
+        height: 250px;
+        }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;     
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .regalos {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .map {
+        width: 300px;
+        height:300px;
+        margin-left: 50px;
+    }
+
+    .deal_text {
+        margin: 10px;
+    }
+    .menu_1 {
+        max-width: 300px;
+    }
+
+    .social {
+        margin-top: 10px;
+        }
+
+    .cta {
+        width: 250px;
+    }
+
+
+    .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        color: white;
+        border-radius: 10px;
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #79b4c2;
+        position: relative;
+      }
+      
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        line-height: 30px;
+      }
+      
+      .topnav a.icon {
+        background: #79b4c2;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .topnav a:hover {
+        background-color: #79b4c2;
+        color: white;
+      }
+      
+      .active {
+        background-color: #6594B1;
+        color: white;
+      }
+}
