@@ -387,6 +387,8 @@ font-size: larger;
     .intro {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         }
     
         .box {
@@ -508,7 +510,6 @@ margin-right: 100px;                       }
     .intro {
         display: flex;
         flex-direction: column;
-        justify-content: center;     
     }
     
     .container {
@@ -588,6 +589,4 @@ margin-right: 100px;                       }
         background-color: #6594B1;
         color: white;
       }
-
 }
-
