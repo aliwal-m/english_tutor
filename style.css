@@ -502,6 +502,7 @@ margin-right: 100px;                       }
     .image {
         width: 250px;
         height: 250px;
+        margin: 30px;
         }
 
     .intro {
@@ -589,3 +590,4 @@ margin-right: 100px;                       }
       }
 
 }
+
