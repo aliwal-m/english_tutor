@@ -181,7 +181,7 @@ margin-top: 15px;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
     padding: 100px;
-    background-image: url(1.png);
+    background-image: url(img/1.png);
     background-size: cover;
 }
   /* Style the front side (fallback if image is missing) */
@@ -259,8 +259,8 @@ margin-top: 15px;
     }
     
     .gallery-item img {
-        width: 100%;
-        height: 100%;
+        width: 150%;
+        height: 150%;
         object-fit: cover;
     }
     
@@ -280,14 +280,14 @@ margin-top: 15px;
     .modal-content {
         margin: auto;
         display: block;
-        width: 80%;
+        width: 100%;
         max-width: 700px;
     }
     
     .close-button {
         position: absolute;
-        top: 15px;
-        right: 35px;
+        top: 5px;
+        right: 120px;
         color: #f1f1f1;
         font-size: 40px;
         font-weight: bold;
@@ -457,7 +457,7 @@ font-size: larger;
           
       .topnav {
         overflow: hidden;
-        background-color: #79b4c2;
+        background-image: url(img/30.png);
         position: relative;
       }
       
@@ -483,12 +483,13 @@ font-size: larger;
       }
       
       .topnav a:hover {
-        background-color: #79b4c2;
+        background-color: #6594B1;
         color: white;
+        
       }
       
       .active {
-        background-color: #6594B1;
+        background-image: url(img/30.png);
         color: white;
       }
 }
@@ -532,6 +533,30 @@ font-size: larger;
         flex-direction: column;
         
     }
+
+    .gallery-item {
+        width: 100px; /* Задайте желаемую ширину превью */
+        height: 100px; /* Задайте желаемую высоту превью */
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    
+    
+    .gallery-item img {
+        width: 100%;
+                object-fit: cover;
+    }
+    
+    
+
+
 
     .telegram {
         margin-left: 60px;
@@ -586,7 +611,7 @@ font-size: larger;
       
       .topnav {
         overflow: hidden;
-        background-color: #79b4c2;
+        background-image: url(img/40.png);
         position: relative;
       }
       
@@ -612,12 +637,12 @@ font-size: larger;
       }
       
       .topnav a:hover {
-        background-color: #79b4c2;
+        background-color: #6594B1;
         color: white;
       }
       
       .active {
-        background-color: #6594B1;
+        background-image: url(img/40.png);
         color: white;
       }
 }
